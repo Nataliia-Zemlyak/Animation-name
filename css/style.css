@@ -23,7 +23,7 @@ body {
   text-align: center;
   padding: 10px 20px;
   opacity: 0;
-  animation: name .2s ease-in-out 1s forwards;
+  animation: name .2s ease-in-out 1s alternate;
  
    
   
@@ -40,21 +40,11 @@ body {
 p {
     animation-duration: 5s;
     animation-name: slidein; 
-    animation-direction: back 4s reverse;
+    
    
     
 }
-@keyframes back {
-  from {
-    margin-left: 0%;
-    width: 100%;
-  }
-  to {
-    margin-left: 100%;
-    width: 300%;
-  }
 
-}
 
 
   @keyframes slidein {
