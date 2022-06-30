@@ -1,0 +1,87 @@
+body {
+    margin: 0 auto;
+    max-width: 600px;
+}
+.style {
+    margin: 50px 50px;
+   
+    background-color: rgb(206, 210, 210);
+    
+    box-shadow: 0px 0px 10px rgb(126, 130, 130);
+    opacity: 0;
+    animation: name .1s ease-in-out .2s forwards;
+    
+
+}
+
+
+.name{
+ font-size: 50px;
+ font-weight: 700;
+ color: rgb(82, 34, 66);
+ text-shadow: 0px 0px 0px 10px rgb(22, 9, 18) ;
+  text-align: center;
+  padding: 10px 20px;
+  opacity: 0;
+  animation: name .2s ease-in-out 1s forwards;
+ 
+   
+  
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;  
+  
+  
+}
+
+
+
+p {
+    animation-duration: 5s;
+    animation-name: slidein; 
+    animation-direction: back 4s reverse;
+   
+    
+}
+@keyframes back {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+}
+
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+  }
+  
+  
+ 
+
+  @keyframes style {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+@keyframes name {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
